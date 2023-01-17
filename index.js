@@ -2,11 +2,11 @@ const OPTIONS = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': '04371f12a3msh8b282e799f5a34fp18c0a6jsn373fa156c24c',
-		'X-RapidAPI-Host': 'ip-geo-location.p.rapidapi.com'
+		'X-RapidAPI-Host': 'find-any-ip-address-or-domain-location-world-wide.p.rapidapi.com'
 	}
 };
 
-const fetchIpInfo = ip => fetch(`https://ip-geo-location.p.rapidapi.com/ip/${ip}?format=json`, OPTIONS)
+const fetchIpInfo = ip => fetch(`https://find-any-ip-address-or-domain-location-world-wide.p.rapidapi.com/iplocation?ip=${ip}&apikey=873dbe322aea47f89dcf729dcc8f60e8`, OPTIONS)
 	.then(response => response.json())
 	.catch(err => console.error(err));
 
