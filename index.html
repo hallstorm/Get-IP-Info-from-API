@@ -11,12 +11,12 @@
 
 <body>
     <main class="container">
-        <form>
+        <form id="form">
             <label>IP del usuario
-                <input type="text" id="input" placeholder="Introduce aquí la IP">
+                <input type="text" id="input" placeholder="Introduce aquí la IP" required>
                 <small>Por ejemplo: 192.168.0.100</small>
             </label>
-            <button>
+            <button id="submit" type="submit">
                 Buscar información de esta IP
             </button>
         </form>
@@ -24,6 +24,8 @@
             <pre id="results"></pre>
         </div>
     </main>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
